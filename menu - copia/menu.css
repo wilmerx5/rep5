@@ -1,0 +1,52 @@
+.container_nav{
+    top: 0%;
+    position: fixed;
+    width: 100vw;
+    height: 20vh;
+    background: lightpink;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20vh;
+
+}
+/* .menu{
+    grid-column: 2;
+    justify-self: start;
+    align-self: center;
+} */
+.nav_ul_login_container{
+    grid-column: 2;
+    display: inline-block;
+    width: 70%;
+    justify-self: center;
+    list-style-type: none;
+    align-self: center;
+}
+.nav_ul_login_li{
+    padding-right: 3%;
+    display: inline-block;
+}
+.nav_ul_login_li a{
+    color:white;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+
+.nav_toggle{
+    display: none;
+    grid-column: 2;
+
+}
+
+.container_logo{
+    grid-column: 1;
+    align-self: center;
+}
+
+body{
+    margin: 0px;
+}

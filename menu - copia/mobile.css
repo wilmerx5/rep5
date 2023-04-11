@@ -1,0 +1,41 @@
+@media screen and (max-width:950px){
+  .nav_ul_login_container{
+    background-color:black;
+    position: fixed;
+    top:18vh;
+    padding: 0px;
+    transition: left 0.2s;
+    width: 100vw;
+    height: 100%;
+    left: 100%;
+  }
+  .show_nav_login_container{
+    left: 0%;
+  }
+  .nav_ul_login_li{
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid white;
+}
+.nav_toggle{
+  display: inline;
+  width: 15%;
+  height: 20%;
+  align-self: center;
+  justify-self: center;
+  margin-right: 4%;
+  color:black;
+  background-color: white;
+  border: none;
+}
+.logo{
+  width: 40vw;
+}
+.nav_ul_login_li a{
+  font-size: 5vw;
+}
+
+}

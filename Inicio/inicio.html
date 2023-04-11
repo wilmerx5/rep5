@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <link rel="icon" href="../favicon/FAVICON2.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Taviraj:wght@200&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/b06732fd2a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="mobile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Inicio</title>
+  </head>
+  <body>
+    <header>
+      <div class="container_nav">
+        <nav class="nav">
+            <div class="container_logo">
+                <a href="inicio.html"><img src="../logo/logo.png" class="logo" alt="logo"></a>
+            </div>
+            <div class="menu"><a href="../menu/menu.html"><i class="fas fa-utensils icon"></i> Nuestro Menu</a></div>
+            <button type="button" name="button" class="nav_toggle"><i class="fas fa-bars menu_hamburguesa"></i></button>
+           <ul class="nav_ul_login_container">
+             <li class="nav_ul_login_li cta"><a href="#">Iniciar sesion</a></li>
+             <li class="nav_ul_login_li cta"><a href="#">Registrarse</a></li>
+          </ul>
+        </nav>
+       </div>
+       <div class="nav_mobile " visibility="hidden" >
+         <ul class="ul_nav_mobile ">
+      <li class="nav_mobile_ul_Li "><a href="../menu/menu.html"><i class="fas fa-utensils icon"></i> Nuestro Menu</a></li>
+      <li class="nav_mobile_ul_li cta"><a href="#">Iniciar sesion</a></li>
+      <li class="nav_mobile_ul_li cta"><a href="#">Registrarse</a></li>
+         </ul>
+       </div>
+
+       <div class="container_modal  modal_close" id="container_modal">
+          <div class="modal">
+              <p class ="close"> <b>X</b></p>
+              <h2 class="modal_h2" id="modal_h2">Registrarse</h2>
+            <form class="register" action="#" method="post">
+              <input class="register_input" type="text" name="Nombres" value="" placeholder="Nombres">
+              <input class="register_input" type="text" name="Apellidos" value="" placeholder="Apellidos">
+              <input class="register_input" type="text" name="telefono" value="" placeholder="Numero de telefono">
+              <input class="register_input" type="email" name="Email" value="" placeholder="Correo electronico ">
+              <input class="register_input" type="password" name="password" value="" placeholder="Contraseña">
+              <input class="register_input" type="text" name="direccion" value="" placeholder="Dirección ">
+              <input  class="submit_form enviar"type="submit" name="enviar" value="Registrase">
+            </form>
+          </div>
+       </div>
+       <?php
+       include("registrar.php")
+       include("login.php")
+       ?>
+       <div class="container_modal_login modal_close_login">
+      <div class="modal_login">
+        <p class="close_login">X</p>
+        <h2 class="modal_login_h2">Iniciar Sesión</h2>
+        <form class="login" action="#" method="post">
+          <input  class="input_login"type="text" name="email_login" value="" placeholder="Correo Electronico">
+          <input  class="input_login"type="passlue="" placeholder="Contraseña">
+           <input  class="submit_login"type="submit" name="enviar_login" value="Ingresar">
+        </form>
+      </div>
+    </div>
+     </header>
+        <article class="article">
+          <div class="carrousel_container">
+            <h2 class ="carrucel_container_h2">DESTACADOS <i class="fas fa-star"></i> </h2>
+            <div class="boton_atras botones">
+
+            </div>
+            <div class="boton_adelante botones">
+                >
+            </div>
+            <div class="contenedor_imagenes_carrousel">
+              <img  id="imagen"name="slider" class="imagenes_carrousel imagenes" src="../imagenes_carrucel/sobrebarriga.jpg" alt="imga" > <p id="descripcion_imagen_carrousel"  class="descripcion_imagen_carrousel">SOBREBARRIGA AL HORNO O EN SALSA</p>
+            </div>
+          </div>
+        </article>
+        <footer class="footer">
+          <div class="container_contacto">
+              <h2 class="contactanos">SERVICIO NACIONAL DE APRENDIZAJE SENA - CENIGRAF <br> Articulación -  Tecnico en Programación de Software  <br> IED Manuel Cepeda Vargas - 2021 - Ficha 2063670 Grado once</h2>
+              <ul class="lista_footer">
+                <li  class="footer_i" >prontopolloportal@gmail.com</li>
+                <li  class="footer_i"><a href="https://www.facebook.com/Pronto-Pollo-Portal-1722442964638122" target="_blank"> <i class="fab fa-facebook icon_footer "></i></a></li>
+                <li  class="footer_i"><i class="fab fa-whatsapp icon_footer"></i></li>
+                <li  class="footer_i"><i <i class="fab fa-instagram icon_footer"></i></li>
+              </ul>
+               <div class="copyright"><i class="copyright_i">copyright</i></div>
+          </div>
+        </footer>
+  </body>
+  <script src="inicio.js">  </script>
+  <script src="carrousel.js">  </script>
+</html> --> -->

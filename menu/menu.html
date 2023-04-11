@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="icon" href="../favicon/FAVICON2.ico">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="mobile.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Taviraj:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b06732fd2a.js" crossorigin="anonymous"></script>
+    <title>Menu</title>
+  </head>
+  <body>
+      <header>
+        <div class="container_nav">
+          <nav class="nav">
+            <div class="container_logo">
+                <a href="../inicio/inicio.html"><img src="../logo/logo.png" class="logo" alt="logo"></a>
+              </div>
+              <div class="menu"><a href="menu.html"><i class="fas fa-utensils icon"></i> Nuestro Menu</a></div>
+            <button type="button" name="button" class="nav_toggle"><i class="fas fa-bars menu_hamburguesa"></i></button>
+            <ul class="nav_ul_login_container">
+               <li class="nav_ul_login_li cta"><a href="#">Iniciar sesion</a></li>
+               <li class="nav_ul_login_li cta"><a href="#">Registrarse</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav_mobile " visibility="hidden" >
+  <ul class="ul_nav_mobile ">
+<li class="nav_mobile_ul_Li "><a href="../inicio/inicio.html"><i class="fas fa-home icon"></i> Inicio</a></li>
+<li class="nav_mobile_ul_li cta"><a href="#">Iniciar sesion</a></li>
+<li class="nav_mobile_ul_li cta"><a href="#">Registrarse</a></li>
+  </ul>
+</div>
+           <div class="container_modal modal_close" id="container_modal">
+              <div class="modal">
+                  <p class ="close"> <b>X</b></p>
+                  <h2 class="modal_h2" id="modal_h2">Registrarse</h2>
+                  <form class="register" action="#" method="post">
+                    <input class="register_input"  required type="text" name="Nombres" value="" placeholder="Nombres">
+                    <input class="register_input"  requiered type="text" name="Apellidos" value="" placeholder="Apellidos">
+                    <input class="register_input"  requiered type="text" name="telefono" value="" placeholder="Numero de telefono">
+                    <input class="register_input" required type="email" name="Email" value="" placeholder="Correo electronico ">
+                    <input class="register_input" required type="password" name="password" value="" placeholder="Contraseña">
+                    <input class="register_input" required type="text" name="direccion" value="" placeholder="Dirección ">
+                    <input  class="submit_form enviar" required type="submit" name="enviar" value="Registrase">
+                  </form>
+              </div>
+              <?php
+              include("registrar.php")
+              ?>
+           </div>
+           <div class="container_modal_login modal_close_login">
+             <div class="modal_login">
+               <p class="close_login">X</p>
+               <h2 class="modal_login_h2">Iniciar Sesión</h2>
+               <form class="login" action="#" method="post">
+                 <input  class="input_login"type="text" name="" value="" placeholder="Correo Electronico">
+                 <input  class="input_login"type="password" name="" value="" placeholder="Contraseña">
+                  <input  class="submit_login"type="submit" name="" value="Ingresar">
+               </form>
+             </div>
+           </div>
+      </header>
+      <article class="article">
+          <div class="div_container_productos">
+            <div class="div_h1_pollo_frito container_productos">
+                <h1 class="h1_pollo_frito titles">POLLO FRITO</h1> </div>
+            <div class="container_productos"><img src="../imagenes_productos/combofrito5.jpg" class="imagen_1pollo imagen_mobile" alt="pollo">  <i class="container_productos_i i_combo_pollo">COMBO DE POLLO FRITO  <br>  ACOMPAÑADO CON  PAPA SALADA, PAPA FRANCESA, PATACÓN, AREPA Y GASEOSA 1.5L  </i> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/Pollo frito2.jpg" class="imagen_1pollo imagen_mobile" alt="pollo">  <i class="container_productos_i i_pollo">UN POLLO FRITO  <br>  ACOMPAÑADO CON  PAPA SALADA, PATACÓN Y AREPA  </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_combo">$28.900 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_pollo"> $26.900 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="container_productos"><img src="../imagenes_productos/mediopollo1.jpg"  class="imagen_medio_poll imagen_mobileo"alt="mediopollo"><i class="container_productos_i i_medio_pollo">  MEDIO POLLO FRITO <br> ACOMPAÑADO CON  PAPA SALADA, PATACÓN Y AREPA  </i> </div>
+            <div class="container_productos"><img src="../imagenes_productos/cuartofrito1.jpg" class="imagen_cuartopollo imagen_mobile" alt="1/4pollo">  <i class="container_productos_i i_cuartopollo">1/4 pollo frito <br>  ACOMPAÑADO CON  PAPA SALADA, PATACÓN Y AREPA  </i></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_medio_pollo">$14.200 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio preciocuartopollo">$8.500 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="h2_pollo_broaster container_productos"><h2 class="titles">POLLO BROASTER</h2> </div>
+            <div class="container_productos"><img src="../imagenes_productos/Combo_Broaster.jpg" class="imagen_combo_broaster imagen_mobile" alt="combo_broaster">  <i class="container_productos_i i_combo_broaster">UN POLLO BROASTER <br>  ACOMPAÑADO CON  PAPA FRANCESA, YUCA, PATACÓN, AREPA Y GASEOSA 1.5L  </i></div>
+            <div class="container_productos"><img src="../imagenes_productos/Pollo Broaster.jpg" class="imagen_pollo_broaster imagen_mobile" alt="pollo_broaster">  <i class="container_productos_i i_pollo_broaster">UN POLLO BROASTER <br>  ACOMPAÑADO CON  PAPA FRANCESA, PATACÓN Y AREPA  </i></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_combo_pollo_broaster">$29.900 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_pollo_broaster">$27.200 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos"><img src="../imagenes_productos/Medio_Broaster.jpg" class="imagen_medio_pollo_broaster imagen_mobile" alt="medio_pollo_broaster">  <i class="container_productos_i i_medio_pollo_broaster">MEDIO POLLO BROASTER <br>  ACOMPAÑADO CON  PAPA FRANCESA, PATACÓN Y AREPA  </i></div>
+            <div class="container_productos"><img src="../imagenes_productos/cuartobroaster.jpg" class="imagen_cuarto_pollo_broaster imagen_mobile" alt="medio_pollo_broaster">  <i class="container_productos_i i_cuarto_pollo_broaster">UN CUARTO DEPOLLO BROASTER <br>  ACOMPAÑADO CON  PAPA FRANCESA, PATACÓN Y AREPA  </i></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_medio_pollo_broaster">$14.900 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio__cuarto_pollo_broaster">$8.900 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="h2_arroz_chino container_productos"><h2 class="titles">ARROCES</h2> </div>
+            <div class="container_productos"><img src="../imagenes_productos/combo_chino_medio.jpg" class="imagen_combo_chino_medio imagen_mobile" alt="combo_chino_medio">  <i class="container_productos_i i_combo_chino_medio">COMBO DE ARROZ CHINO CON MEDIO POLLO <br>  ACOMPAÑADO CON  PAPA FRANCESA Y GASEOSA 1.5L  </i> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/combo_chino_cuarto.jpg" class="imagen_combo_chino_cuarto imagen_mobile" alt="combo_chino_cuarto">  <i class="container_productos_i i_combo_chino_cuarto">COMBO ARROZ CHINO CON CUARTO DE POLLO <br>  ACOMPAÑADO CON  PAPA FRANCESA Y GASEOSA 1.5L  </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_combo_chino_medio">$28.900 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_combo_chino_cuarto"> $26.900 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="container_productos"><img src="../imagenes_productos/chino_medio.jpg" class="imagen_chino_medio imagen_mobile" alt="arroz chino_medio">  <i class="container_productos_i i_chino_medio">ARROZ CHINO CON MEDIO POLLO  <br>  ACOMPAÑADO CON  PAPA FRANCESA  </i> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/chino_cuarto.jpg" class="imagen_1pollo imagen_mobile" alt="pollo">  <i class="container_productos_i i_arroz_chino_cuarto">ARROZ CHINO CON CUARTO DE POLLO <br>  ACOMPAÑADO CON  PAPA FRANCESA  </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_chino_medio">$25.900 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_chino_cuarto"> $24.900 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/arroz_chino.jpg" class="imagen_arroz_chino imagen_mobile" alt="ARROZ_CHINO">  <i class="container_productos_i i_arroz_chino">ARROZ CHINO  <br>  ACOMPAÑADO CON  PAPA FRANCESA  </i>  </div>
+            <div class="container_productos"> <img src="../imagenes_productos/arroz_pollo.jpg" class="imagen_arroz_pollo imagen_mobile" alt="arroz con pollo">  <i class="container_productos_i i_arroz_pollo">ARROZ CON POLLO<br>  ACOMPAÑADO CON  PAPA FRANCESA Y ENSALADA  </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_chino">$21.900 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_arroz_pollo"> $19.900 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/arroz_paisa.jpg" class="imagen_paisa imagen_mobile" alt="ARROZ_PAISA">  <i class="container_productos_i i_paisa">ARROZ PAISA <br>  ACOMPAÑADO CON  PAPA FRANCESA  </i>  </div>
+            <div class="container_productos"> <img src="../imagenes_productos/combo_paisa.jpg" class="imagen_combo_paisa imagen_mobile" alt="combo_paisa">  <i class="container_productos_i i_combo-paisa">ARROZ PAISA <br>  ACOMPAÑADO CON  PAPA FRANCESA, YUCA Y GASEOSA 1.5L  </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_chino_medio">$25.900 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_chino_cuarto"> $28.900 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="platos_a_la_carta container_productos"><h2 class="titles">PLATOS A LA CARTA</h2> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/../imagenes_productos/churrasco.jpg" class="imagen_churrasco imagen_mobile" alt="churrasco">  <i class="container_productos_i i_churrasco">CHURRASCO DE 450G <br>  ACOMPAÑADO CON  PAPA FRANCESA Y ENSALADA  </i>  </div>
+            <div class="container_productos"> <img src="../imagenes_productos/Tabla_mixta.jpg" class="imagen_tabla-mixta imagen_mobile" alt="tabla-mixta">  <i class="container_productos_i i_tabla-mixta">TABLA MIXTA(MEDIO CHURRASCO Y UN CUARTO DE POLLO) <br>  ACOMPAÑADO CON  PAPA FRANCESA, ENSALADA Y ARROZ </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_churrasco">$22.900 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_tabla-mixta"> $21.900 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/sobrebarriga.jpg" class="imagen_sobrebarriga imagen_mobile" alt="sobrebarriga">  <i class="container_productos_i i_sobrebarriga">SOBREBARRIGA (AL HORNO O SUDADDA) <br>  ACOMPAÑADA CON  PAPA FRANCESA ENSALADA Y ARROZ  </i>  </div>
+            <div class="container_productos"> <img src="../imagenes_productos/carne.jpg" class="imagen_carne imagen_mobile" alt="combo_paisa">  <i class="container_productos_i i_carne">CARNE ALA PLANCHA <br>  ACOMPAÑADA CON  PAPA FRANCESA, ENSALADA Y ARROZ  </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_sobrebarriga">$21.900 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_carne"> $21.900 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/mojarra.jpg" class="imagen_mojarra imagen_mobile" alt="mojarra">  <i class="container_productos_i i_mojarra">MOJARRA <br>  ACOMPAÑADA CON  PAPA FRANCESA ENSALADA Y ARROZ  </i>  </div>
+            <div class="container_productos"> <img src="../imagenes_productos/bagre.jpg" class="imagen_bagres imagen_mobile" alt="bagre">  <i class="container_productos_i i_bagre">BAGRE (AL HORNO O SUDADO) <br>  ACOMPAÑADO CON  PAPA FRANCESA, ENSALADA Y ARROZ  </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_mojarra">$20.900 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_bagre"> $20.900</i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/trucha.jpg" class="imagen_trucha imagen_mobile" alt="trucha">  <i class="container_productos_i i_trucha">TRUCHA (FRITA O A LA PLANCHA)<br>  ACOMPAÑADA CON  PAPA FRANCESA  ENSALADA Y ARROZ </i>  </div>
+            <div class="container_productos"> <img src="../imagenes_productos/costillas.jpg" class="imagen_costillas imagen_mobile" alt="costillas">  <i class="container_productos_i i_costillas">COSTILLAS DE CERDO <br>  ACOMPAÑADA CON  PAPA FRANCESA, YUCA, ARROZ Y PATACON  </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_trucha">$20.900 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_costillas"> $19.800 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/pechuga_gratinada.jpg" class="imagen_pechuga_gratinada imagen_mobile" alt="pechuga gratinada">  <i class="container_productos_i i_pechuga_gratinada">PECHUGA A LA PLANCHA GRATINADA  <br>  ACOMPAÑADA CON  PAPA FRANCESA, ENSALADA Y ARROZ  </i>  </div>
+            <div class="container_productos"> <img src="../imagenes_productos/pechuga.jpg" class="imagen_pechuga imagen_mobile" alt="pechuga">  <i class="container_productos_i i_pechuga"> PECHUGA A LA PLANCHA<br>  ACOMPAÑADA CON  PAPA FRANCESA, ENSALADA Y ARROZ </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_pechuga_gratinada">$21.900 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_pechuga"> $21.900 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/default.jpg" class="imagen_milanesa imagen_mobile" alt="milanesa">  <i class="container_productos_i i_milanesa">MILANESA DE POLLO <br>  ACOMPAÑADA CON  PAPA FRANCESA ENSALADA Y ARROZ  </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_sobrebarriga">$21.900 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="comidas_rapidas container_productos"><h2 class="titles">COMIDAS RAPIDAS</h2> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/taco1.jpg" class="taco1 imagen_mobile" alt="Taco">  <i class="container_productos_i i_taco">TACO AL PASTOR <br>  ACOMPAÑADA CON  PAPA FRANCESA, BEBIDA 250ML  </i>  </div>
+            <div class="container_productos"> <img src="../imagenes_productos/taco2.jpg" class="taco2 imagen_mobile" alt="Taco">  <i class="container_productos_i i_taco2"> DUO DE TACOS AL PASTOR<br>  ACOMPAÑADA CON  PAPA FRANCESA, BEBIDA 400ML </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_taco1">$11.500 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_taco2"> $19.500 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/taco3.jpg" class="taco3 imagen_mobile" alt="Taco">  <i class="container_productos_i i_taco3">TRIO DE TACOS AL PASTOR  <br>  ACOMPAÑADA CON  PAPA FRANCESA, GASEOSA 1.5L  </i>  </div>
+            <div class="container_productos"> <img src="../imagenes_productos/taco4.jpg" class="taco4 imagen_mobile" alt="Taco">  <i class="container_productos_i i_taco4"> MEGA COMBO DE TACOS<br>  4TACCOS AL PASTOR, PAPA FRANCESA, GASEOSA 1.5L </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_taco3">$25.500 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_taco4"> $32.400 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/hamburguesa.jpg" class="imagen_hamburguesa imagen_mobile" alt="Hamburguesa">  <i class="container_productos_i i_hamburguesa">HAMBURGUESA CLASICA  <br>  ACOMPAÑADA CON  PAPA FRANCESA, BEBIDA 400ML  </i>  </div>
+            <div class="container_productos"> <img src="../imagenes_productos/hamburguesa.jpg" class="imagen_hamburguesa2 imagen_mobile" alt="Hamburguesa">  <i class="container_productos_i i_hamburguesa">  2 HAMBURGUESAS CLASICAS<br>  ACOMPAÑADAS  CON  PAPA FRANCESA, 2  BEBIDAS 400ML </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_hamburguesa">$15.900 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_hamburguesa2"> $28.600 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/hamburguesa.jpg" class="imagen_hamburguesa3 imagen_mobile" alt="Hamburguesa">  <i class="container_productos_i i_hamburguesa"> 3 HAMBURGUESAS CLASICAS  <br>  ACOMPAÑADAS CON  PAPA FRANCESA, BEBIDA 1.5L  </i>  </div>
+            <div class="container_productos"> <img src="../imagenes_productos/alitas.jpg" class="imagen_alitas imagen_mobile" alt="Alitas">  <i class="container_productos_i i_alitas"> AlITAS BROASTER<br>  ACOMPAÑADA CON  PAPA FRANCESA, BEBIDA 400ML </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_hamburguesa3">$42.300 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_alitas"> $13.500 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="bandejas container_productos"><h2 class="titles">BANDEJAS</h2> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/bandeja_broaster.jpg" class="imagen_bandeja_broaster imagen_mobile" alt="bandeja_broaster">  <i class="container_productos_i i_bandeja_broaster">BANDEJA CON POLLO BROASTER  <br>  ACOMPAÑADA CON  PAPA FRANCESA, ENSALADA Y ARROZ Y PATACON  </i>  </div>
+            <div class="container_productos"> <img src="../imagenes_productos/default.jpg" class="imagen_default imagen_mobile" alt="bandeja_pollo_frito">  <i class="container_productos_i i_default">BANDEJA CON POLLO FRITO <br>  ACOMPAÑADA CON  PAPA FRANCESA, ENSALADA, ARROZ Y PATACON  </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_bandeja_broaster"> $13.500 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_bandeja_frita"> $13.000 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/default.jpg" class="imagen_default imagen_mobile" alt="ejecutivo_broaster">  <i class="container_productos_i i_default">EJECUTIVO CON POLLO BROASTER <br>  ACOMPAÑADO CON  PAPA FRANCESA ENSALADA, ARROZ , UNA SOPA PEUQEÑA Y BEBIDA DE 400ML </i>  </div>
+            <div class="container_productos"> <img src="../imagenes_productos/ejecutivo_frito.jpg" class="imagen_ejecutivo_frito imagen_mobile" alt="ejecutivo_frito">  <i class="container_productos_i i_ejecutivo_frito">EJECUTIVO CON POLLO FRITO <br>  ACOMPAÑADO CON  PAPA FRANCESA, ENSALADA, ARROZ UNA SOPA PEQUEÑA Y UNA BEBIDA DE 400ML </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_ejecutivo_broaster">$14.200 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_ejecutivo_frito"> $14.900</i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="porciones container_productos"><h2 class="titles">SOPAS</h2> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/sopa_ajiaco.jpg" class="imagen_ajiaco imagen_mobile" alt="ajiaco">  <i class="container_productos_i i_ajiaco">SOPA DE AJIACO<br>  ACOMPAÑADA CON ARROZ </i>  </div>
+            <div class="container_productos"> <img src="../imagenes_productos/menudencia.jpg" class="imagen_menudencias imagen_mobile" alt="menudencias">  <i class="container_productos_i i_menudencias">SOPA DE MENUDENCIAS <br>  ACOMPAÑADA CON   ARROZ   </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_sopa_ajiaco">$25.900 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_sopa_menudencia"> $28.900 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+            <div class="porciones container_productos"><h2 class="titles">PORCIONES</h2> </div>
+            <div class="container_productos"> <img src="../imagenes_productos/papa_francesa.jpg" class="imagen_papa_francesa imagen_mobile" alt="papa_francesa">  <i class="container_productos_i papa_francesa">PORCIÓN DE PAPA FRANCESA<br> </i>  </div>
+            <div class="container_productos"> <img src="../imagenes_productos/papa_salada.jpg" class="imagen_papa_salada imagen_mobile" alt="papa_salada">  <i class="container_productos_i i_papa_salada">PORCIÓN DE PAPA SALADA <br>    </i>  </div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_papa_francesa">$4.800 </i><input type="button" class="boton_precio" value="Agregar"></div>
+            <div class="container_productos precios"><i class="container_boton_precio precio_papa_salada"> $4.500 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+             <div class="container_productos"> <img src="../imagenes_productos/Ensalada.jpg" class="imagen_ensalada imagen_mobile" alt="Ensalada">  <i class="container_productos_i i_Ensalada">PORCIÓN DE ENSALADA<br>  </i>  </div>
+              <div class="container_productos"> <img src="../imagenes_productos/arroz.jpg" class="imagen_arroz imagen_mobile" alt="arroz">  <i class="container_productos_i i_arroz">PORCIÓN DE ARROZ <br>    </i>  </div>
+              <div class="container_productos precios"><i class="container_boton_precio precio_ensalada">$4.800 </i><input type="button" class="boton_precio" value="Agregar"></div>
+              <div class="container_productos precios"><i class="container_boton_precio precio_arroz"> $4.800 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+              <div class="container_productos"> <img src="../imagenes_productos/patacon.jpg" class="imagen_patacon imagen_mobile" alt="patacon">  <i class="container_productos_i i_patacon">PORCIÓN DE PATACÓN<br>  </i>  </div>
+               <div class="container_productos"> <img src="../imagenes_productos/maduro.jpg" class="imagen_maduro imagen_mobile" alt="maduro">  <i class="container_productos_i i_maduro">MADURO CON QUESO Y BOCADILLO <br>    </i>  </div>
+               <div class="container_productos precios"><i class="container_boton_precio precio_patacon">$4.800 </i><input type="button" class="boton_precio" value="Agregar"></div>
+               <div class="container_productos precios"><i class="container_boton_precio precio_maduro"> $4.800 </i> <input type="button" class="boton_precio" value="Agregar"> </div>
+          </div>
+      </article>
+      <footer class="footer">
+        <div class="container_contacto">
+            <h2 class="contactanos">SERVICIO NACIONAL DE APRENDIZAJE SENA - CENIGRAF <br> Articulación -  Tecnico en Programación de Software  <br> IED Manuel Cepeda Vargas - 2021 - Ficha 2063670 Grado once</h2>
+            <ul class="lista_footer">
+              <li  class="footer_i" >prontopolloportal@gmail.com</li>
+              <li  class="footer_i"><a href="https://www.facebook.com/Pronto-Pollo-Portal-1722442964638122" target="_blank"> <i class="fab fa-facebook icon_footer "></i></a></li>
+              <li  class="footer_i"><i class="fab fa-whatsapp icon_footer"></i></li>
+              <li  class="footer_i"><i <i class="fab fa-instagram icon_footer"></i></li>
+            </ul>
+             <div class="copyright"><i class="copyright_i">copyright</i></div>
+        </div>
+      </footer>
+  </body>
+  <script type="text/javascript "src="menu.js">  </script>
+
+  <script type="text/javascript">
+    let  iconwhats = document.querySelectorAll(".cta")[0];
+    iconwhats.classList.add("whatssap1")
+  </script>
+</html>
